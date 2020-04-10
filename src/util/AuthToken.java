@@ -48,6 +48,6 @@ public class AuthToken {
     }
 
     public boolean match(AuthToken authToken) {
-        return this.token == authToken.token;
+        return this.token.equals(authToken.token);
     }
 }
